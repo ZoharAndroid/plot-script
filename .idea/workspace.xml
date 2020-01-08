@@ -30,6 +30,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -219,10 +220,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="add bar plot and add pdf to tex file" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="409" y="7" key="CommitChangelistDialog2" timestamp="1578452989401">
+    <state x="409" y="7" key="CommitChangelistDialog2" timestamp="1578453568327">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="409" y="7" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1578452989401" />
+    <state x="409" y="7" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1578453568327" />
     <state x="919" y="345" key="FileChooserDialogImpl" timestamp="1578396569354">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -247,10 +248,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="346" y="83" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1578369072560" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1578452999305">
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1578453579054">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1578452999305" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1578453579054" />
     <state x="748" y="155" key="search.everywhere.popup" timestamp="1578368582968">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
