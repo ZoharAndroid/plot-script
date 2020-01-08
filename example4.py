@@ -28,10 +28,10 @@ ax.spines['right'].set_linewidth(2)
 ax.spines['top'].set_linewidth(2)
 ax.spines['left'].set_linewidth(2)
 bar_width = 0.2
-bar1 = plt.bar([1, 2], art_data, width=bar_width, color='#fee6ce', edgecolor='black',linewidth=1)
+bar1 = plt.bar([1, 2], art_data, width=bar_width, color='#e6550d', edgecolor='black',linewidth=1)
 bar2 = plt.bar([1 + bar_width, 2 + bar_width], sail_data, width=bar_width, color='#fdae6b',edgecolor='black',
                linewidth=1, hatch='/')
-bar3 = plt.bar([1 + bar_width * 2, 2 + bar_width * 2], poptrie_data, width=bar_width, color='#e6550d',edgecolor='black',
+bar3 = plt.bar([1 + bar_width * 2, 2 + bar_width * 2], poptrie_data, width=bar_width, color='#fee6ce',edgecolor='black',
                linewidth=1, hatch='\\')
 plt.xticks([1 + bar_width, 2 + bar_width], ['w/o comp', 'w comp'], fontproperties='Times New Roman', size=16)
 plt.ylim(10, 42)

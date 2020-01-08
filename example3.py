@@ -40,11 +40,11 @@ ax.spines['bottom'].set_linewidth(2)  # 设置坐标轴宽度
 ax.spines['right'].set_linewidth(2)
 ax.spines['top'].set_linewidth(2)
 ax.spines['left'].set_linewidth(2)
-bar1 = plt.bar(header[1:], wo_l1_data, color='lightgrey', edgecolor='black', linewidth=1)
-bar2 = plt.bar(header[1:], wo_l2_data, bottom=wo_l1_data, color='goldenrod', edgecolor='black', linewidth=1)
+bar1 = plt.bar(header[1:], wo_l1_data, color='#e6550d', edgecolor='black', linewidth=1)
+bar2 = plt.bar(header[1:], wo_l2_data, bottom=wo_l1_data, color='#fdae6b', edgecolor='black', linewidth=1)
 bar3 = plt.bar(header[1:], wo_l3_data, bottom=[wo_l2_data[i] + wo_l1_data[i] for i in range(len(wo_l2_data))],
-               color='limegreen', edgecolor='black', linewidth=1)
-plt.xticks(header[1:], fontproperties='Times New Roman', size=16)
+               color='#fee6ce', edgecolor='black', linewidth=1)
+plt.xticks(header[1:], ['Art', 'Sail', 'Poptrie'], fontproperties='Times New Roman', size=16)
 plt.grid(axis='y', color='black', linewidth=0.5, linestyle='--')
 font = {'family': 'Times New Roman', 'size': 20}
 plt.ylabel('overall cache-miss \n overhead per packet(ns)', font)
@@ -59,11 +59,11 @@ ax.spines['bottom'].set_linewidth(2)  # 设置坐标轴宽度
 ax.spines['right'].set_linewidth(2)
 ax.spines['top'].set_linewidth(2)
 ax.spines['left'].set_linewidth(2)
-bar1 = plt.bar(header[1:], w_l1_data, color='lightgrey', edgecolor='black', linewidth=1)
-bar2 = plt.bar(header[1:], w_l2_data, bottom=w_l1_data, color='goldenrod', edgecolor='black', linewidth=1)
+bar1 = plt.bar(header[1:], w_l1_data, color='#e6550d', edgecolor='black', linewidth=1)
+bar2 = plt.bar(header[1:], w_l2_data, bottom=w_l1_data, color='#fdae6b', edgecolor='black', linewidth=1)
 bar3 = plt.bar(header[1:], w_l3_data, bottom=[w_l2_data[i] + w_l1_data[i] for i in range(len(w_l2_data))],
-               color='limegreen', edgecolor='black', linewidth=1)
-plt.xticks(header[1:], fontproperties='Times New Roman', size=16)  # 设置横坐标
+               color='#fee6ce', edgecolor='black', linewidth=1)
+plt.xticks(header[1:], ['Art', 'Sail', 'Poptrie'], fontproperties='Times New Roman', size=16)  # 设置横坐标
 plt.grid(axis='y', color='black', linewidth=0.5, linestyle='--')  # 设置网格线
 plt.xlabel('w comp', font)
 plt.yticks(np.arange(0, 140, 20), ['', '', '', '', '', ''], fontproperties='Times New Roman', size=16)
@@ -74,6 +74,6 @@ plt.legend([bar1, bar2, bar3], ['L1 miss overhead', 'L2 miss overhead', 'L3 miss
            bbox_to_anchor=(-0.2, 1.30), prop=font, columnspacing=0.1, handlelength=1, handletextpad=0.1, frameon=False)
 
 plt.savefig('result/example3.pdf', dpi=600, bbox_inches='tight')  # 保存为pdf文件
-plt.savefig('example-picture/example3.png',dpi=600,bbox_inches='tight') # 保存为png文件
+plt.savefig('example-picture/example3.png', dpi=600, bbox_inches='tight')  # 保存为png文件
 
 # plt.show()

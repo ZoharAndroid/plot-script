@@ -2,13 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="576556b2-1301-46d0-83f9-38814f6644db" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/datas/tx-rx.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example-picture/example6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example6.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/result/example6.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/paper/test.tex" beforeDir="false" afterPath="$PROJECT_DIR$/paper/test.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-picture/example3.png" beforeDir="false" afterPath="$PROJECT_DIR$/example-picture/example3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-picture/example4.png" beforeDir="false" afterPath="$PROJECT_DIR$/example-picture/example4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-picture/example6.png" beforeDir="false" afterPath="$PROJECT_DIR$/example-picture/example6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example3.py" beforeDir="false" afterPath="$PROJECT_DIR$/example3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example4.py" beforeDir="false" afterPath="$PROJECT_DIR$/example4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example6.py" beforeDir="false" afterPath="$PROJECT_DIR$/example6.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/example3.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/example3.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/example4.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/example4.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/example6.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/example6.pdf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +58,7 @@
       <recent name="G:\PythonProject\plot-script\datas" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.example6">
+  <component name="RunManager" selected="Python.example3">
     <configuration name="example (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="paper-plot-script" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -77,7 +80,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="example2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="example3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="paper-plot-script" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -89,7 +92,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/example2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/example3.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -163,11 +166,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.example3" />
         <item itemvalue="Python.example6" />
-        <item itemvalue="Python.example5" />
         <item itemvalue="Python.example4" />
+        <item itemvalue="Python.example5" />
         <item itemvalue="Python.example (1)" />
-        <item itemvalue="Python.example2" />
       </list>
     </recent_temporary>
   </component>
@@ -250,7 +253,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578461786553</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add example6 and update README.md and update tex">
+      <created>1578485529433</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1578485529433</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -262,41 +272,42 @@
     <MESSAGE value="update README.md" />
     <MESSAGE value="add example4 and update readme" />
     <MESSAGE value="add example5 and update README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="add example5 and update README.md" />
+    <MESSAGE value="add example6 and update README.md and update tex" />
+    <option name="LAST_COMMIT_MESSAGE" value="add example6 and update README.md and update tex" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="409" y="7" key="CommitChangelistDialog2" timestamp="1578461785357">
+    <state x="409" y="7" key="CommitChangelistDialog2" timestamp="1578485528095">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="409" y="7" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1578461785357" />
+    <state x="409" y="7" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1578485528095" />
     <state x="919" y="345" key="FileChooserDialogImpl" timestamp="1578396569354">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="919" y="345" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1578396569354" />
-    <state width="1500" height="302" key="GridCell.Tab.0.bottom" timestamp="1578485405563">
+    <state width="1500" height="222" key="GridCell.Tab.0.bottom" timestamp="1578489083738">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1500" height="302" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1578485405563" />
-    <state width="1500" height="302" key="GridCell.Tab.0.center" timestamp="1578485405563">
+    <state width="1500" height="222" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1578489083738" />
+    <state width="1500" height="222" key="GridCell.Tab.0.center" timestamp="1578489083737">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1500" height="302" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1578485405563" />
-    <state width="1500" height="302" key="GridCell.Tab.0.left" timestamp="1578485405563">
+    <state width="1500" height="222" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1578489083737" />
+    <state width="1500" height="222" key="GridCell.Tab.0.left" timestamp="1578489083737">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1500" height="302" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1578485405563" />
-    <state width="1500" height="302" key="GridCell.Tab.0.right" timestamp="1578485405563">
+    <state width="1500" height="222" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1578489083737" />
+    <state width="1500" height="222" key="GridCell.Tab.0.right" timestamp="1578489083737">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1500" height="302" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1578485405563" />
+    <state width="1500" height="222" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1578489083737" />
     <state x="346" y="83" key="SettingsEditor" timestamp="1578369072560">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="346" y="83" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1578369072560" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1578461798741">
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1578485537119">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1578461798741" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1578485537119" />
     <state x="748" y="155" key="search.everywhere.popup" timestamp="1578368582968">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

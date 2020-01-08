@@ -31,13 +31,13 @@ ax.spines['right'].set_linewidth(2)
 ax.spines['top'].set_linewidth(2)
 ax.spines['left'].set_linewidth(2)
 bar_width = 0.2
-bar1 = plt.bar([1, 2, 3, 4, 5], base_data, width=bar_width, edgecolor='black', color='#0c2c84')
+bar1 = plt.bar([1, 2, 3, 4, 5], base_data, width=bar_width, edgecolor='black', color='#e6550d')
 bar2 = plt.bar([1 + bar_width, 2 + bar_width, 3 + bar_width, 4 + bar_width, 5 + bar_width], \
-               art_data, width=bar_width, edgecolor='black', color='#41b6c4', hatch='o')
+               art_data, width=bar_width, edgecolor='black', color='#fdae6b')
 bar3 = plt.bar([1 + bar_width * 2, 2 + bar_width * 2, 3 + bar_width * 2, 4 + bar_width * 2, 5 + bar_width * 2], \
-               sail_data, width=bar_width, edgecolor='black', color='#c7e9b4', )
+               sail_data, width=bar_width, edgecolor='black', color='#fee6ce', hatch='o')
 bar4 = plt.bar([1 + bar_width * 3, 2 + bar_width * 3, 3 + bar_width * 3, 4 + bar_width * 3, 5 + bar_width * 3], \
-               poptrie_data, width=bar_width, edgecolor='black', color='#ffffd9', hatch='\\')
+               poptrie_data, width=bar_width, edgecolor='black', color='#fff5eb', hatch='/')
 plt.xticks([1 + bar_width * 1.5, 2 + bar_width * 1.5, 3 + bar_width * 1.5, 4 + bar_width * 1.5, 5 + bar_width * 1.5],
            xtick_label, fontproperties='Times New Roman', size=16)
 font = {'family': 'Times New Roman', 'size': 16}
@@ -46,7 +46,7 @@ plt.ylim(0,45)
 plt.yticks(np.arange(0, 50, 10), np.arange(0, 50, 10), fontproperties='Times New Roman', size=16)
 plt.ylabel('speed(Gbps)', font)
 plt.grid(axis='y', color='black', linewidth=0.5, linestyle='--')
-font = {'family': 'Times New Roman', 'size': 12}
+font = {'family': 'Times New Roman', 'size': 14}
 plt.legend([bar1, bar2, bar3, bar4], ['Baseline', 'Art', 'Sail', 'Poptrie'], loc='upper center',
            bbox_to_anchor=(0.4, 1.2), ncol=4, prop=font, frameon=False, columnspacing=0.26, handlelength=1.5,
            handletextpad=0.1)
