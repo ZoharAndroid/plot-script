@@ -4,9 +4,6 @@
     <list default="true" id="576556b2-1301-46d0-83f9-38814f6644db" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example.py" beforeDir="false" afterPath="$PROJECT_DIR$/example.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example2.py" beforeDir="false" afterPath="$PROJECT_DIR$/example2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example3.py" beforeDir="false" afterPath="$PROJECT_DIR$/example3.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +21,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1W3ARs3Kbgh03YGcfZECFHsu0KS" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -210,20 +210,36 @@
       <option name="project" value="LOCAL" />
       <updated>1578452991003</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="update README.md and some codes">
+      <created>1578453569748</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1578453569748</updated>
+    </task>
+    <task id="LOCAL-00005" summary="update README.md and some codes">
+      <created>1578453643934</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1578453643934</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="add box plot example and update tex file" />
     <MESSAGE value="add box plot example pdf file" />
     <MESSAGE value="add bar plot and add pdf to tex file" />
-    <option name="LAST_COMMIT_MESSAGE" value="add bar plot and add pdf to tex file" />
+    <MESSAGE value="update README.md and some codes" />
+    <option name="LAST_COMMIT_MESSAGE" value="update README.md and some codes" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="409" y="7" key="CommitChangelistDialog2" timestamp="1578453568327">
+    <state x="409" y="7" key="CommitChangelistDialog2" timestamp="1578453642920">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="409" y="7" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1578453568327" />
+    <state x="409" y="7" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1578453642920" />
     <state x="919" y="345" key="FileChooserDialogImpl" timestamp="1578396569354">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -248,10 +264,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="346" y="83" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1578369072560" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1578453579054">
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1578454235312">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1578453579054" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1578454235312" />
     <state x="748" y="155" key="search.everywhere.popup" timestamp="1578368582968">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

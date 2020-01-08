@@ -22,15 +22,15 @@
 
 ## 3.1. example1
 
-![](../plot-script/example-picture/example.png)
+![](example-picture/example.png)
 
 ## 3.2. example2
 
-![](../plot-script/example-picture/example2.png)
+![](example-picture/example2.png)
 
 ## 3.3. example3
 
-![](../plot-script/example-picture/example3.png)
+![](example-picture/example3.png)
 
 后序继续完成绘图的模块和更多的绘图样式例子。
 更新中。。。。
