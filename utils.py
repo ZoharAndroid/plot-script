@@ -29,15 +29,14 @@ class Utils:
                     data.append(column_data)
                 return header, data
             else:  # csv文件虽然包含了header，但是只返回数据部分，其他部分不返回
-                for i in np.arange(data_frame.columns.size):
-                    data.append(data_frame.iloc[1:, i].tolist())
+                for i in data_frame.columns.values:
+                    data.append(data_frame[i].tolist())
                 return data
         else:  # csv文件不包含头部的处理方法
             data_frame = pd.read_csv(data_base_dir + filename, header=None, index_col=False)
             for i in np.arange(data_frame.columns.size):
                 data.append(data_frame.iloc[:, i].tolist())
             return data
-
 
     @staticmethod
     def read_csv_index(filename, index):
