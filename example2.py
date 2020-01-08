@@ -83,4 +83,5 @@ plt.grid(axis='y', color='black', linewidth=0.5, linestyle='--')
 ax.text(1, 700, name[2].capitalize(), fontsize=20)
 
 plt.savefig('result/example2.pdf', dpi=600, bbox_inches='tight')
-plt.show()
+plt.savefig('example-picture/example2.png',dpi=600,bbox_inches='tight') # 保存为png文件
+# plt.show()

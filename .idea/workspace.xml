@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="576556b2-1301-46d0-83f9-38814f6644db" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/datas/cache-1-w.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datas/cache-1-wo.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example3.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/paper/test.tex" beforeDir="false" afterPath="$PROJECT_DIR$/paper/test.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/example2.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/example2.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example.py" beforeDir="false" afterPath="$PROJECT_DIR$/example.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example2.py" beforeDir="false" afterPath="$PROJECT_DIR$/example2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example3.py" beforeDir="false" afterPath="$PROJECT_DIR$/example3.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +49,7 @@
       <recent name="G:\PythonProject\plot-script\datas" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.example3">
+  <component name="RunManager" selected="Python.example (1)">
     <configuration name="example (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="paper-plot-script" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -159,10 +157,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.example3" />
-        <item itemvalue="Python.example2" />
-        <item itemvalue="Python.utils" />
         <item itemvalue="Python.example (1)" />
+        <item itemvalue="Python.example2" />
+        <item itemvalue="Python.example3" />
+        <item itemvalue="Python.utils" />
         <item itemvalue="Python.example" />
       </list>
     </recent_temporary>
@@ -204,47 +202,55 @@
       <option name="project" value="LOCAL" />
       <updated>1578412019333</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add bar plot and add pdf to tex file">
+      <created>1578452991003</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1578452991003</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add box plot example and update tex file" />
     <MESSAGE value="add box plot example pdf file" />
-    <option name="LAST_COMMIT_MESSAGE" value="add box plot example pdf file" />
+    <MESSAGE value="add bar plot and add pdf to tex file" />
+    <option name="LAST_COMMIT_MESSAGE" value="add bar plot and add pdf to tex file" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="409" y="7" key="CommitChangelistDialog2" timestamp="1578412018159">
+    <state x="409" y="7" key="CommitChangelistDialog2" timestamp="1578452989401">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="409" y="7" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1578412018159" />
+    <state x="409" y="7" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1578452989401" />
     <state x="919" y="345" key="FileChooserDialogImpl" timestamp="1578396569354">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="919" y="345" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1578396569354" />
-    <state width="1515" height="177" key="GridCell.Tab.0.bottom" timestamp="1578452880620">
+    <state width="1515" height="131" key="GridCell.Tab.0.bottom" timestamp="1578453472725">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1515" height="177" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1578452880620" />
-    <state width="1515" height="177" key="GridCell.Tab.0.center" timestamp="1578452880620">
+    <state width="1515" height="131" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1578453472725" />
+    <state width="1515" height="131" key="GridCell.Tab.0.center" timestamp="1578453472725">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1515" height="177" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1578452880620" />
-    <state width="1515" height="177" key="GridCell.Tab.0.left" timestamp="1578452880620">
+    <state width="1515" height="131" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1578453472725" />
+    <state width="1515" height="131" key="GridCell.Tab.0.left" timestamp="1578453472725">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1515" height="177" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1578452880620" />
-    <state width="1515" height="177" key="GridCell.Tab.0.right" timestamp="1578452880620">
+    <state width="1515" height="131" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1578453472725" />
+    <state width="1515" height="131" key="GridCell.Tab.0.right" timestamp="1578453472725">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1515" height="177" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1578452880620" />
+    <state width="1515" height="131" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1578453472725" />
     <state x="346" y="83" key="SettingsEditor" timestamp="1578369072560">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="346" y="83" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1578369072560" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1578412039952">
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1578452999305">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1578412039952" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1578452999305" />
     <state x="748" y="155" key="search.everywhere.popup" timestamp="1578368582968">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

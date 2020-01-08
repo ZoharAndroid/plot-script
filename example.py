@@ -41,5 +41,7 @@ plt.grid(axis='y', color='black', linewidth=0.5, linestyle='--')
 font = {'family': 'Times New Roman', 'size': 16}
 plt.legend(loc='upper left', frameon=False, ncol=2, labelspacing=0.1, columnspacing=0.1, handlelength=2,
            handletextpad=0.5, borderaxespad=0.01, prop=font)
+
 plt.savefig('result/example.pdf', dpi=600, bbox_inches='tight')
-plt.show()
+plt.savefig('example-picture/example.png',dpi=600,bbox_inches='tight') # 保存为png文件
+# plt.show()

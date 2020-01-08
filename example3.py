@@ -74,5 +74,6 @@ plt.legend([bar1, bar2, bar3], ['L1 miss overhead', 'L2 miss overhead', 'L3 miss
            bbox_to_anchor=(-0.2, 1.30), prop=font, columnspacing=0.1, handlelength=1, handletextpad=0.1, frameon=False)
 
 plt.savefig('result/example3.pdf', dpi=600, bbox_inches='tight')  # 保存为pdf文件
+plt.savefig('example-picture/example3.png',dpi=600,bbox_inches='tight') # 保存为png文件
 
 # plt.show()
