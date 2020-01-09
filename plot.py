@@ -5,6 +5,7 @@
 
 import matplotlib.pyplot as plt
 from font import Font
+import matplotlib
 
 pdf_base_dir = 'result/'  # pdf保存的目录
 picture_base_dir = 'example-picture/'  # png格式保存的目录
@@ -13,17 +14,22 @@ picture_base_dir = 'example-picture/'  # png格式保存的目录
 class Plot:
 
     @staticmethod
-    def create_figure(figsize, dpi=600):
+    def create_figure(figsize, dpi=600, wspace=0.1):
         plt.figure(1, figsize=figsize, dpi=600)
+        plt.tight_layout()
+        plt.subplots_adjust(wspace=wspace)
 
     @staticmethod
-    def plot_setting(loc, axis_width=2):
+    def plot_setting(loc, axis_width=2, xtick_direction='out', ytick_dircetion='out'):
+        matplotlib.rcParams['xtick.direction'] = xtick_direction
+        matplotlib.rcParams['ytick.direction'] = ytick_dircetion  # 设置坐标轴刻度朝向
         ax = plt.subplot(loc)
         ax.set_axisbelow(True)  # 设置网格线和坐标轴是在figure的上面还是在下面
         ax.spines['bottom'].set_linewidth(axis_width)  # 设置坐标轴宽度
         ax.spines['right'].set_linewidth(axis_width)
         ax.spines['top'].set_linewidth(axis_width)
         ax.spines['left'].set_linewidth(axis_width)
+        return ax
 
     @staticmethod
     def plot_bar(x, height, color, bar_width=0.2, bottom=None, edgecolor='black', linewidth=1, hatch=None):
@@ -33,6 +39,24 @@ class Plot:
     def plot(data, label, color='black', marker=None, linestyle='-', markersize=10, linewidth=2, ):
         return plt.plot(data, label=label, color=color, marker=marker, markersize=markersize, linewidth=linewidth,
                         linestyle=linestyle)
+
+    @staticmethod
+    def plot_box(data, showfilers=False, widths=0.8, cap_color='black', cap_linewidth=1, median_color='darkorange',
+                 median_linewidth=1):
+        f = plt.boxplot(data, showfliers=showfilers, widths=widths)
+        for cap in f['caps']:  # 把箱型图中的错误符号进行设置
+            cap.set(color=cap_color, linewidth=cap_linewidth)
+        for median in f['medians']:  # 把箱型图中的中位数符号进行设置
+            median.set(color=median_color, linewidth=median_linewidth)
+        return f
+
+    @staticmethod
+    def plot_text(x, y, text, fontsize=20):
+        plt.text(x, y, text, fontsize=fontsize)
+
+    @staticmethod
+    def plot_xlim(start, end):
+        plt.xlim(start, end)
 
     @staticmethod
     def plot_xticks(ticks, label=None, font_size=16):
