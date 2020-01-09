@@ -10,8 +10,6 @@ import matplotlib
 pdf_base_dir = 'result/'  # pdf保存的目录
 picture_base_dir = 'example-picture/'  # png格式保存的目录
 
-color = ['#e6550d', '#fdae6b', '#fee6ce']
-
 
 class Plot:
 
@@ -62,8 +60,8 @@ class Plot:
         plt.xlim(start, end)
 
     @staticmethod
-    def plot_xticks(ticks, label=None, font_size=16):
-        plt.xticks(ticks=ticks, labels=label, fontproperties='Times New Roman', size=font_size)
+    def plot_xticks(ticks, label=None, font_size=16, rotation=None):
+        plt.xticks(ticks=ticks, labels=label, fontproperties='Times New Roman', size=font_size, rotation=rotation)
 
     @staticmethod
     def plot_xlable(label, font_size=13):
@@ -106,3 +104,6 @@ class Save:
     def save(filename, dpi=600):
         Save.save_to_pdf(filename, dpi=dpi)
         Save.save_to_picture(filename, dpi=dpi)
+
+class Color:
+    color = ['#e6550d', '#fdae6b', '#fee6ce', '#fff5eb']

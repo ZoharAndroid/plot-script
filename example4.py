@@ -23,29 +23,30 @@ w_data = [art_data[1], sail_data[1], poptrie_data[1]]
 
 # 绘图
 Plot.create_figure((3.2, 2))
-# plt.figure(1, figsize=(3.2, 2), dpi=600)
+
 Plot.plot_setting(111)
 bar_width = 0.2
 bar1 = Plot.plot_bar([1, 2], art_data, color='#e6550d')
 bar2 = Plot.plot_bar([1 + bar_width, 2 + bar_width], sail_data, color='#fdae6b', hatch='/')
 bar3 = Plot.plot_bar([1 + bar_width * 2, 2 + bar_width * 2], poptrie_data, color='#fee6ce', hatch='\\')
+Plot.plot_xticks([1 + bar_width, 2 + bar_width], ['w/o comp', 'w comp'])
+Plot.plot_ylim(10, 42)
+Plot.plot_yticks(np.arange(10, 42, 10))
+Plot.plot_grid()
+Plot.plot_ylabel('CPU cycle\n per packet')
+Plot.plot_legend([bar1, bar2, bar3], ['Art', 'Sail', 'Poptrie'], loc='upper left', bbox_to_anchor=(0, 1), ncol=1)
+Save.save('example4')
+
+
+
+# plt.figure(1, figsize=(3.2, 2), dpi=600)
 # bar1 = plt.bar([1, 2], art_data, width=bar_width, color=, edgecolor='black',linewidth=1)
 # bar2 = plt.bar([1 + bar_width, 2 + bar_width], sail_data, width=bar_width, color='#fdae6b',edgecolor='black',
 #                linewidth=1, hatch='/')
 # bar3 = plt.bar([1 + bar_width * 2, 2 + bar_width * 2], poptrie_data, width = bar_width, color = '#fee6ce', edgecolor = 'black',
-#
-#
-Plot.plot_xticks([1 + bar_width, 2 + bar_width], ['w/o comp', 'w comp'])
 # plt.xticks([1 + bar_width, 2 + bar_width], ['w/o comp', 'w comp'], fontproperties='Times New Roman', size=16)
-Plot.plot_ylim(10, 42)
 # plt.ylim(10, 42)
-Plot.plot_yticks(np.arange(10, 42, 10))
 # plt.yticks(np.arange(10, 42, 10), fontproperties='Times New Roman', size=16)
-Plot.plot_grid()
-Plot.plot_ylabel('CPU cycle\n per packet')
 # plt.ylabel('CPU cycle\n per packet', Font.font_13_label)
-Plot.plot_legend([bar1, bar2, bar3], ['Art', 'Sail', 'Poptrie'], loc='upper left', bbox_to_anchor=(0, 1), ncol=1)
 # plt.legend([bar1, bar2, bar3], ['Art', 'Sail', 'Poptrie'], loc='upper left', bbox_to_anchor=(0, 1), ncol=1,
 #            frameon=False, prop=Font.font_12_label, columnspacing=0.1, handlelength=1, handletextpad=0.1)
-
-Save.save('example4')
