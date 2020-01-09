@@ -37,8 +37,8 @@ class Plot:
                        bottom=bottom)
 
     @staticmethod
-    def plot(x,data, label, color='black', marker=None, linestyle='-', markersize=10, linewidth=2, ):
-        return plt.plot(x,data, label=label, color=color, marker=marker, markersize=markersize, linewidth=linewidth,
+    def plot(x, data, label, color='black', marker=None, linestyle='-', markersize=10, linewidth=2, ):
+        return plt.plot(x, data, label=label, color=color, marker=marker, markersize=markersize, linewidth=linewidth,
                         linestyle=linestyle)
 
     @staticmethod
@@ -54,6 +54,10 @@ class Plot:
     @staticmethod
     def plot_text(x, y, text, fontsize=20):
         plt.text(x, y, text, fontsize=fontsize)
+
+    @staticmethod
+    def plot_hlines(y_data, x_start, x_end, colors='black', lienstyles='-', label=None):
+        return plt.hlines(y_data, x_start, x_end, colors=colors, linestyles=lienstyles, label=label)
 
     @staticmethod
     def plot_xlim(start, end):
@@ -104,6 +108,7 @@ class Save:
     def save(filename, dpi=600):
         Save.save_to_pdf(filename, dpi=dpi)
         Save.save_to_picture(filename, dpi=dpi)
+
 
 class Color:
     color = ['#e6550d', '#fdae6b', '#fee6ce', '#fff5eb']

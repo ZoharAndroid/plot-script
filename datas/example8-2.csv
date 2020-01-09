@@ -1,0 +1,5 @@
+type,art,sail,poptire,dxr
+m_max,6,3,9,15
+m_min,2,1,2,3
+r_max,3,3,5,15
+r_min,1,1,2,3
