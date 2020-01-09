@@ -4,3 +4,4 @@
 /paper/test.synctex.gz
 .vscode-upload.json
 .idea/*
+__pycache__/*

@@ -22,7 +22,7 @@
 
 ## 3.1. example1
 
-![](example-picture/example.png)
+![](example-picture/example1.png)
 
 ## 3.2. example2
 
