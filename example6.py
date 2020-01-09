@@ -42,7 +42,7 @@ Plot.plot_xticks([1 + bar_width * 2, 2 + bar_width * 2, 3 + bar_width * 2, 4 + b
 Plot.plot_xlable('packet size(Byte)', font_size=16)
 Plot.plot_ylabel('speed(Gbps)', font_size=16)
 Plot.plot_ylim(0, 45)
-Plot.plot_legend([bar1, bar2, bar3, bar4], ['Baseline', 'Art', 'Sail', 'Poptrie'], ncol=4, bbox_to_anchor=(0.5, 1.2),
+Plot.plot_legend([bar1, bar2, bar3, bar4], ['Baseline', 'Art', 'Sail', 'Poptrie'], ncol=4, bbox_to_anchor=(0.4, 1.2),
                  loc='upper center', font_size=14)
 
 Save.save('example6')
