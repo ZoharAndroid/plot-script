@@ -10,6 +10,8 @@ import matplotlib
 pdf_base_dir = 'result/'  # pdf保存的目录
 picture_base_dir = 'example-picture/'  # png格式保存的目录
 
+color = ['#e6550d', '#fdae6b', '#fee6ce']
+
 
 class Plot:
 
@@ -33,7 +35,8 @@ class Plot:
 
     @staticmethod
     def plot_bar(x, height, color, bar_width=0.2, bottom=None, edgecolor='black', linewidth=1, hatch=None):
-        return plt.bar(x, height, width=bar_width, color=color, edgecolor='black', linewidth=linewidth, hatch=hatch)
+        return plt.bar(x, height, width=bar_width, color=color, edgecolor='black', linewidth=linewidth, hatch=hatch,
+                       bottom=bottom)
 
     @staticmethod
     def plot(data, label, color='black', marker=None, linestyle='-', markersize=10, linewidth=2, ):
