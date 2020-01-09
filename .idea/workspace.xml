@@ -2,16 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="576556b2-1301-46d0-83f9-38814f6644db" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example-picture/example1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/font.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plot.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-picture/example3.png" beforeDir="false" afterPath="$PROJECT_DIR$/example-picture/example3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-picture/example4.png" beforeDir="false" afterPath="$PROJECT_DIR$/example-picture/example4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-picture/example6.png" beforeDir="false" afterPath="$PROJECT_DIR$/example-picture/example6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example3.py" beforeDir="false" afterPath="$PROJECT_DIR$/example3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-picture/example.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example.py" beforeDir="false" afterPath="$PROJECT_DIR$/example1.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example4.py" beforeDir="false" afterPath="$PROJECT_DIR$/example4.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example6.py" beforeDir="false" afterPath="$PROJECT_DIR$/example6.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/example3.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/example3.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/paper/test.tex" beforeDir="false" afterPath="$PROJECT_DIR$/paper/test.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/example.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/example1.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/result/example4.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/example4.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/example6.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/example6.pdf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,8 +59,8 @@
       <recent name="G:\PythonProject\plot-script\datas" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.example3">
-    <configuration name="example (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.example1">
+    <configuration name="example1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="paper-plot-script" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -71,7 +72,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/example.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/example1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -122,27 +123,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="example5" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="paper-plot-script" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/example5.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="example6" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="paper-plot-script" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -164,13 +144,34 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="plot" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="paper-plot-script" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/plot.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.example1" />
+        <item itemvalue="Python.example4" />
+        <item itemvalue="Python.plot" />
         <item itemvalue="Python.example3" />
         <item itemvalue="Python.example6" />
-        <item itemvalue="Python.example4" />
-        <item itemvalue="Python.example5" />
-        <item itemvalue="Python.example (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -260,7 +261,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578485529433</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="update color">
+      <created>1578489228004</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1578489228004</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -273,55 +281,49 @@
     <MESSAGE value="add example4 and update readme" />
     <MESSAGE value="add example5 and update README.md" />
     <MESSAGE value="add example6 and update README.md and update tex" />
-    <option name="LAST_COMMIT_MESSAGE" value="add example6 and update README.md and update tex" />
+    <MESSAGE value="update color" />
+    <option name="LAST_COMMIT_MESSAGE" value="update color" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="409" y="7" key="CommitChangelistDialog2" timestamp="1578485528095">
+    <state x="499" y="164" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1578553030677">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="409" y="7" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1578485528095" />
+    <state x="499" y="164" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.834@0.0.1536.834" timestamp="1578553030677" />
+    <state x="409" y="7" key="CommitChangelistDialog2" timestamp="1578489226767">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="409" y="7" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1578489226767" />
     <state x="919" y="345" key="FileChooserDialogImpl" timestamp="1578396569354">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="919" y="345" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1578396569354" />
-    <state width="1500" height="222" key="GridCell.Tab.0.bottom" timestamp="1578489083738">
+    <state width="1515" height="124" key="GridCell.Tab.0.bottom" timestamp="1578556377060">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1500" height="222" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1578489083738" />
-    <state width="1500" height="222" key="GridCell.Tab.0.center" timestamp="1578489083737">
+    <state width="1515" height="124" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1578556377060" />
+    <state width="1515" height="124" key="GridCell.Tab.0.center" timestamp="1578556377060">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1500" height="222" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1578489083737" />
-    <state width="1500" height="222" key="GridCell.Tab.0.left" timestamp="1578489083737">
+    <state width="1515" height="124" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1578556377060" />
+    <state width="1515" height="124" key="GridCell.Tab.0.left" timestamp="1578556377060">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1500" height="222" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1578489083737" />
-    <state width="1500" height="222" key="GridCell.Tab.0.right" timestamp="1578489083737">
+    <state width="1515" height="124" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1578556377060" />
+    <state width="1515" height="124" key="GridCell.Tab.0.right" timestamp="1578556377060">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1500" height="222" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1578489083737" />
+    <state width="1515" height="124" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1578556377060" />
     <state x="346" y="83" key="SettingsEditor" timestamp="1578369072560">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="346" y="83" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1578369072560" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1578485537119">
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1578489236708">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1578485537119" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1578489236708" />
     <state x="748" y="155" key="search.everywhere.popup" timestamp="1578368582968">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="748" y="155" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1578368582968" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/utils.py</url>
-          <line>4</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
