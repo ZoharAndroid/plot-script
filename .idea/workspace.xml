@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="576556b2-1301-46d0-83f9-38814f6644db" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example-picture/example1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/font.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-picture/example.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example.py" beforeDir="false" afterPath="$PROJECT_DIR$/example1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example4.py" beforeDir="false" afterPath="$PROJECT_DIR$/example4.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/paper/test.tex" beforeDir="false" afterPath="$PROJECT_DIR$/paper/test.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/example.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/example1.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/example4.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/example4.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -268,7 +258,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578489228004</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="重新整合代码">
+      <created>1578556583337</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1578556583337</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -282,17 +279,18 @@
     <MESSAGE value="add example5 and update README.md" />
     <MESSAGE value="add example6 and update README.md and update tex" />
     <MESSAGE value="update color" />
-    <option name="LAST_COMMIT_MESSAGE" value="update color" />
+    <MESSAGE value="重新整合代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="重新整合代码" />
   </component>
   <component name="WindowStateProjectService">
     <state x="499" y="164" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1578553030677">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="499" y="164" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.834@0.0.1536.834" timestamp="1578553030677" />
-    <state x="409" y="7" key="CommitChangelistDialog2" timestamp="1578489226767">
+    <state x="409" y="7" key="CommitChangelistDialog2" timestamp="1578556581325">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="409" y="7" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1578489226767" />
+    <state x="409" y="7" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1578556581325" />
     <state x="919" y="345" key="FileChooserDialogImpl" timestamp="1578396569354">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
