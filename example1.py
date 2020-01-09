@@ -20,9 +20,9 @@ poptrie = data[3]
 
 Plot.create_figure((3, 2.5))
 Plot.plot_setting(111)
-line1, = Plot.plot(art, label=str(header[1]).capitalize(),color='#e6550d')
-line2, = Plot.plot(sail, label=str(header[2]).capitalize(), linestyle='--',color='#fdae6b')
-line3, = Plot.plot(poptrie, label=str(header[3]).capitalize(), color='#fee6ce', marker='o')
+line1, = Plot.plot(np.arange(0,10,1),art, label=str(header[1]).capitalize(),color='#e6550d')
+line2, = Plot.plot(np.arange(0,10,1),sail, label=str(header[2]).capitalize(), linestyle='--',color='#fdae6b')
+line3, = Plot.plot(np.arange(0,10,1),poptrie, label=str(header[3]).capitalize(), color='#fee6ce', marker='o')
 Plot.plot_xlable('locality', font_size=20)
 Plot.plot_ylabel('speed(Mpps)', font_size=20)
 Plot.plot_xticks(np.arange(0, 10, 3), ['1', '8', '64', '512'])

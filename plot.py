@@ -37,8 +37,8 @@ class Plot:
                        bottom=bottom)
 
     @staticmethod
-    def plot(data, label, color='black', marker=None, linestyle='-', markersize=10, linewidth=2, ):
-        return plt.plot(data, label=label, color=color, marker=marker, markersize=markersize, linewidth=linewidth,
+    def plot(x,data, label, color='black', marker=None, linestyle='-', markersize=10, linewidth=2, ):
+        return plt.plot(x,data, label=label, color=color, marker=marker, markersize=markersize, linewidth=linewidth,
                         linestyle=linestyle)
 
     @staticmethod

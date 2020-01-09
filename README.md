@@ -44,6 +44,10 @@
 
 ![](example-picture/example6.png)
 
+## 3.7. example7
+
+![](example-picture/example7.png)
+
 后序继续完成绘图的模块和更多的绘图样式例子。
 更新中。。。。
 
