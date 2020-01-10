@@ -13,12 +13,15 @@ picture_base_dir = 'example-picture/'  # png格式保存的目录
 
 
 class Plot:
+    figure = None  # 调用create_figure之后生成的figure对象
+    ax = None  # 调用Plot_setting之后生成的ax对象
 
     @staticmethod
     def create_figure(figsize, dpi=600, wspace=0.1):
-        plt.figure(1, figsize=figsize, dpi=600)
+        figure = plt.figure(1, figsize=figsize, dpi=dpi)
         plt.tight_layout()
         plt.subplots_adjust(wspace=wspace)
+        Plot.figure = figure
 
     @staticmethod
     def plot_setting(loc, axis_width=2, xtick_direction='out', ytick_dircetion='out'):
@@ -30,6 +33,7 @@ class Plot:
         ax.spines['right'].set_linewidth(axis_width)
         ax.spines['top'].set_linewidth(axis_width)
         ax.spines['left'].set_linewidth(axis_width)
+        Plot.ax = ax
         return ax
 
     @staticmethod
@@ -59,6 +63,30 @@ class Plot:
     @staticmethod
     def plot_hlines(y_data, x_start, x_end, colors='black', lienstyles='-', label=None):
         return plt.hlines(y_data, x_start, x_end, colors=colors, linestyles=lienstyles, label=label)
+
+    @staticmethod
+    def plot_semilogy(x, y, basey=10, color='black', marker=None, linestyle='-', markersize=10, linewidth=2, ):
+        return plt.semilogy(x, y, basey=basey, color=color, marker=marker, markersize=markersize,
+                            linewidth=linewidth, linestyle=linestyle)
+
+    @staticmethod
+    def plot_semilogx(x, y, basex=10, color='black', marker=None, linestyle='-', markersize=10, linewidth=2, ):
+        return plt.semilogx(x, y, basex=basex, color=color, marker=marker, markersize=markersize,
+                            linewidth=linewidth, linestyle=linestyle)
+
+    @staticmethod
+    def plot_setXscale():
+        Plot.ax.set_xscale('log')
+
+    @staticmethod
+    def plot_setYscale():
+        Plot.ax.set_yscale('log')
+        Plot.ax
+
+    @staticmethod
+    def plot_loglog(x, y, basex=10, basey=10, color='black', marker=None, linestyle='-', markersize=10, linewidth=2, ):
+        return plt.loglog(x, y, basex=basex, basey=basey, color=color, marker=marker, markersize=markersize,
+                          linewidth=linewidth, linestyle=linestyle)
 
     @staticmethod
     def plot_xlim(start, end):
@@ -130,6 +158,41 @@ class Plot:
         frame = plt.gca()
         frame.axes.get_yaxis().set_visible(False)
 
+    @staticmethod
+    def plot_setXtickLabelSize(fontsize):
+        """
+        设置X轴刻度的大小值。这个可以单独设置X轴的大小值，不依赖于其他的方法。
+        :param fontsize: 刻度大小值
+        :return:
+        """
+        labels = Plot.ax.get_xticklabels()
+        for label in labels:
+            label.set_fontsize(fontsize)
+            label.set_fontname('Times New Roman')
+
+    @staticmethod
+    def plot_setYtickLabelSize(fontsize):
+        """
+        设置Y轴刻度的大小值。这个可以单独设置Y轴的大小值，不依赖于其他的方法。
+        :param fontsize: 刻度大小值
+        :return:
+        """
+        labels = Plot.ax.get_yticklabels()
+        for label in labels:
+            label.set_fontsize(fontsize)
+            label.set_fontname('Times New Roman')
+
+    @staticmethod
+    def plot_set_XtickLabelVisible(visible:bool):
+        labels = Plot.ax.get_xticklabels()
+        for label in labels:
+            label.set_visible(visible)
+
+    @staticmethod
+    def plot_set_YtickLabelVisible(visible:bool):
+        labels = Plot.ax.get_yticklabels()
+        for label in labels:
+            label.set_visible(visible)
 
 class Save:
     @staticmethod

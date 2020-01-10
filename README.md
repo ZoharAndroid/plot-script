@@ -61,6 +61,9 @@
 
 ![](example-picture/example8.png)
 
+## 3.9. example9
+
+![](example-picture/example9.png)
 
 **后序继续完善plot库和添加更多的绘图样式例子。**
 
