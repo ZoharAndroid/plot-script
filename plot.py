@@ -206,12 +206,36 @@ class Plot:
 
     @staticmethod
     def plot_show_barAboveText(rects, font_size=12):
+        """
+        在柱状图上的每个柱子上面显示对应的值文本。
+        :param rects: plot_bar返回的对应的bar对象
+        :param font_size: 显示文字的大小
+        :return:
+        """
         for rect in rects:
             height = rect.get_height()
             annotate = Plot.ax.annotate(str(height), xy=((rect.get_x() + rect.get_width() / 2), height),
-                             ha='center', va='bottom')
+                                        ha='center', va='bottom')
             annotate.set_fontsize(font_size)
             annotate.set_fontfamily('Times New Roman')
+
+    @staticmethod
+    def plot_annotate(text, xy, xytext=None, font_size=12, arrowprops: dict = None):
+        """
+        放置注解
+        :param text: 注解字符串
+        :param xy: 箭头坐标
+        :param xytext: 注解文本坐标
+        :param font_size: 字体大小
+        :param arrowprops: 设置箭头的相关属性值，用字典类型。具体参考：
+        https://matplotlib.org/api/_as_gen/matplotlib.axes.Axes.annotate.html?highlight=annotate#matplotlib.axes.Axes.annotate
+        https://matplotlib.org/gallery/pyplots/annotation_basic.html#sphx-glr-gallery-pyplots-annotation-basic-py
+        :return:
+        """
+        annotate = Plot.ax.annotate(text, xy, xytext=xytext, arrowprops=arrowprops)
+        annotate.set_fontsize(font_size)
+        annotate.set_fontfamily('Times New Roman')
+
 
 class Save:
     @staticmethod
