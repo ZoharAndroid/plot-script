@@ -183,20 +183,39 @@ class Plot:
             label.set_fontname('Times New Roman')
 
     @staticmethod
-    def plot_set_XtickLabelVisible(visible:bool):
+    def plot_set_XtickLabelVisible(visible: bool):
+        """
+        X轴的刻度label是否可见。
+        :param visible: True，可见；False，不可见。
+        :return:
+        """
         labels = Plot.ax.get_xticklabels()
         for label in labels:
             label.set_visible(visible)
 
     @staticmethod
-    def plot_set_YtickLabelVisible(visible:bool):
+    def plot_set_YtickLabelVisible(visible: bool):
+        """
+        Y轴的刻度label是否可见。
+        :param visible: True，可见；False，不可见。
+        :return:
+        """
         labels = Plot.ax.get_yticklabels()
         for label in labels:
             label.set_visible(visible)
 
+    @staticmethod
+    def plot_show_barAboveText(rects, font_size=12):
+        for rect in rects:
+            height = rect.get_height()
+            annotate = Plot.ax.annotate(str(height), xy=((rect.get_x() + rect.get_width() / 2), height),
+                             ha='center', va='bottom')
+            annotate.set_fontsize(font_size)
+            annotate.set_fontfamily('Times New Roman')
+
 class Save:
     @staticmethod
-    def save_to_pdf(filename, dpi=600):
+    def save_to_pdf(filename, dpi=500):
         """
         保存为pdf。
         :param filename: 文件名。不需要带格式后缀，直接输入文件名即可。
@@ -206,7 +225,7 @@ class Save:
         plt.savefig(pdf_base_dir + filename + '.pdf', dpi=dpi, bbox_inches='tight')  # 保存为pdf文件
 
     @staticmethod
-    def save_to_picture(filename, dpi=600):
+    def save_to_picture(filename, dpi=500):
         """
         保存为png格式。
         :param filename: 文件名，不需要输入格式后缀。
