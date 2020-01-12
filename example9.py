@@ -30,11 +30,11 @@ bar2 = Plot.plot_bar(x_tick, y2_num, color=Color.color[1], bar_width=bar_width)
 x_tick = []
 for i in np.arange(1, 13, 2):
     x_tick.append(i + (bar_width + bar_gap) * 2)
-bar3 = Plot.plot_bar(x_tick, y3_num, color=Color.color[2], bar_width=bar_width,hatch='o')
+bar3 = Plot.plot_bar(x_tick, y3_num, color=Color.color[2], bar_width=bar_width,hatch='oo')
 x_tick = []
 for i in np.arange(1, 13, 2):
     x_tick.append(i + (bar_width + bar_gap) * 3)
-bar4 = Plot.plot_bar(x_tick, y4_num, color=Color.color[3], bar_width=bar_width,hatch='\\')
+bar4 = Plot.plot_bar(x_tick, y4_num, color=Color.color[3], bar_width=bar_width,hatch='\\\\')
 Plot.plot_setYscale()
 x_tick = []
 for i in np.arange(1, 12, 2):

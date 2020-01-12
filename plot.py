@@ -7,6 +7,7 @@ import matplotlib.pyplot as plt
 from font import Font
 import matplotlib
 from matplotlib.pyplot import MultipleLocator
+from matplotlib.ticker import ScalarFormatter
 
 pdf_base_dir = 'result/'  # pdf保存的目录
 picture_base_dir = 'example-picture/'  # png格式保存的目录
@@ -17,10 +18,10 @@ class Plot:
     ax = None  # 调用Plot_setting之后生成的ax对象
 
     @staticmethod
-    def create_figure(figsize, dpi=600, wspace=0.1):
+    def create_figure(figsize, dpi=600, wspace=0.1, hspace=None):
         figure = plt.figure(1, figsize=figsize, dpi=dpi)
         plt.tight_layout()
-        plt.subplots_adjust(wspace=wspace)
+        plt.subplots_adjust(wspace=wspace, hspace=hspace)  # 设置图片之间的上下间隔
         Plot.figure = figure
 
     @staticmethod
@@ -42,7 +43,7 @@ class Plot:
                        bottom=bottom)
 
     @staticmethod
-    def plot(x, data, label, color='black', marker=None, linestyle='-', markersize=10, linewidth=2, ):
+    def plot(x, data, label=None, color='black', marker=None, linestyle='-', markersize=10, linewidth=2, ):
         return plt.plot(x, data, label=label, color=color, marker=marker, markersize=markersize, linewidth=linewidth,
                         linestyle=linestyle)
 
@@ -76,11 +77,21 @@ class Plot:
 
     @staticmethod
     def plot_setXscale():
+        """
+        设置X轴为10的指数格式。
+        :return:
+        """
         Plot.ax.set_xscale('log')
+        # Plot.ax.xaxis.set_major_formatter(ScalarFormatter())
 
     @staticmethod
     def plot_setYscale():
+        """
+        设置Y轴为10的指数形式。
+        :return:
+        """
         Plot.ax.set_yscale('log')
+        # Plot.ax.yaxis.set_major_formatter(ScalarFormatter())
 
     @staticmethod
     def plot_loglog(x, y, basex=10, basey=10, color='black', marker=None, linestyle='-', markersize=10, linewidth=2, ):
@@ -137,6 +148,14 @@ class Plot:
 
     @staticmethod
     def plot_grid(axis='y', color='black', linewidth=0.5, linestyle='--'):
+        """
+        绘制网格线。
+        :param axis: 默认为绘制y轴网格。
+        :param color: 默认颜色为黑色。
+        :param linewidth: 网格线线宽。
+        :param linestyle: 网格线类型。
+        :return:
+        """
         plt.grid(axis=axis, color=color, linewidth=linewidth, linestyle=linestyle)
 
     @staticmethod
@@ -204,6 +223,56 @@ class Plot:
             label.set_visible(visible)
 
     @staticmethod
+    def plot_setXticksLabelRotation(rotation):
+        """
+        设置X轴坐标刻度旋转。
+        :param rotation: 旋转角度
+        :return:
+        """
+        labels = Plot.ax.get_xticklabels()
+        for label in labels:
+            label.set_rotation(rotation)
+
+    @staticmethod
+    def plot_setYticksLabelRotation(rotation):
+        """
+        设置Y轴刻度旋转角度。
+        :param rotation: 旋转角度。
+        :return:
+        """
+        labels = Plot.ax.get_yticklabels()
+        for label in labels:
+            label.set_rotation(rotation)
+
+    @staticmethod
+    def plot_setXticksLabel(fontsize=16, rotation=None):
+        """
+        设置X轴刻度相关属性。显示字体的大小。旋转角度。
+        :param fontsize: 字体大小，默认值为：15
+        :param rotation: 旋转角度。默认值为None。
+        :return:
+        """
+        labels = Plot.ax.get_xticklabels()
+        for label in labels:
+            label.set_fontsize(fontsize)
+            label.set_fontname('Times New Roman')
+            label.set_rotation(rotation)
+
+    @staticmethod
+    def plot_setYticksLabel(fontsize=16, rotation=None):
+        """
+        设置Y轴刻度相关属性。显示字体的大小。旋转角度。
+        :param fontsize: 字体大小，默认值为：15
+        :param rotation: 旋转角度。默认值为None。
+        :return:
+        """
+        labels = Plot.ax.get_yticklabels()
+        for label in labels:
+            label.set_fontsize(fontsize)
+            label.set_fontname('Times New Roman')
+            label.set_rotation(rotation)
+
+    @staticmethod
     def plot_show_barAboveText(rects, font_size=12):
         """
         在柱状图上的每个柱子上面显示对应的值文本。
@@ -235,8 +304,41 @@ class Plot:
         annotate.set_fontsize(font_size)
         annotate.set_fontfamily('Times New Roman')
 
+    @staticmethod
+    def plot_setXtickGap(x_gap):
+        """
+        设置x轴刻度的刻度大小
+        :param x_gap:
+        :return:
+        """
+        x_major_locator = MultipleLocator(x_gap)
+        ax = plt.gca()
+        # ax为两条坐标轴的实例
+        ax.xaxis.set_major_locator(x_major_locator)
+
+    @staticmethod
+    def plot_setYtickGap(y_gap):
+        """
+        设置Y轴刻度大小。
+        :param y_gap:
+        :return:
+        """
+        y_major_locator = MultipleLocator(y_gap)
+        ax = plt.gca()
+        # ax为两条坐标轴的实例
+        ax.xaxis.set_major_locator(y_major_locator)
+
+    @staticmethod
+    def plot_get_axis():
+        """
+        获取坐标轴实例。
+        :return: 两条坐标轴实例。
+        """
+        return plt.gca()
+
 
 class Save:
+
     @staticmethod
     def save_to_pdf(filename, dpi=500):
         """
@@ -267,28 +369,6 @@ class Save:
         """
         Save.save_to_pdf(filename, dpi=dpi)
         Save.save_to_picture(filename, dpi=dpi)
-
-    @staticmethod
-    def set_xtick_gap(x_gap):
-        x_major_locator = MultipleLocator(x_gap)
-        ax = plt.gca()
-        # ax为两条坐标轴的实例
-        ax.xaxis.set_major_locator(x_major_locator)
-
-    @staticmethod
-    def set_ytick_gap(y_gap):
-        y_major_locator = MultipleLocator(y_gap)
-        ax = plt.gca()
-        # ax为两条坐标轴的实例
-        ax.xaxis.set_major_locator(y_major_locator)
-
-    @staticmethod
-    def get_axis():
-        """
-        获取坐标轴实例。
-        :return: 两条坐标轴实例。
-        """
-        return plt.gca()
 
 
 class Color:
