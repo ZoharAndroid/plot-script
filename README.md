@@ -5,7 +5,7 @@
 
 # 2. 当前目录介绍
 
-当前目录一共三个目录(datas,paper, result，example-picutre)和一些脚本文件（只需关注这些，其他的都是自动生成的一些文件）其中：
+当前目录一共四个目录(datas, paper, result，example-picutre)和一些脚本文件（只需关注这些，其他的都是自动生成的一些文件）其中：
 
 * **目录**：
   

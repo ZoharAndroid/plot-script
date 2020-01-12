@@ -33,9 +33,9 @@ bar2 = Plot.plot_bar([1 + bar_width, 2 + bar_width, 3 + bar_width, 4 + bar_width
                      color=Color.color[1])
 bar3 = Plot.plot_bar([1 + bar_width * 2, 2 + bar_width * 2, 3 + bar_width * 2, 4 + bar_width * 2, 5 + bar_width * 2],
                      sail_data, bar_width=bar_width,
-                     color=Color.color[2], hatch='o')
+                     color=Color.color[2], hatch='oo')
 bar4 = Plot.plot_bar([1 + bar_width * 3, 2 + bar_width * 3, 3 + bar_width * 3, 4 + bar_width * 3, 5 + bar_width * 3],
-                     poptrie_data, bar_width=bar_width, color=Color.color[3], hatch='\\')
+                     poptrie_data, bar_width=bar_width, color=Color.color[3], hatch='\\\\')
 Plot.plot_grid()
 Plot.plot_xticks([1 + bar_width * 2, 2 + bar_width * 2, 3 + bar_width * 2, 4 + bar_width * 2, 5 + bar_width * 2],
                  [64, 128, 256, 512, 1024], font_size=16)

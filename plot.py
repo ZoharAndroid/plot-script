@@ -81,7 +81,6 @@ class Plot:
     @staticmethod
     def plot_setYscale():
         Plot.ax.set_yscale('log')
-        Plot.ax
 
     @staticmethod
     def plot_loglog(x, y, basex=10, basey=10, color='black', marker=None, linestyle='-', markersize=10, linewidth=2, ):
