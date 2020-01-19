@@ -28,6 +28,7 @@ class Plot:
     def plot_setting(loc, axis_width=2, xtick_direction='out', ytick_dircetion='out'):
         matplotlib.rcParams['xtick.direction'] = xtick_direction
         matplotlib.rcParams['ytick.direction'] = ytick_dircetion  # 设置坐标轴刻度朝向
+        matplotlib.rcParams['axes.unicode_minus'] = False  # 用来正常显示负号
         ax = plt.subplot(loc)
         ax.set_axisbelow(True)  # 设置网格线和坐标轴是在figure的上面还是在下面
         ax.spines['bottom'].set_linewidth(axis_width)  # 设置坐标轴宽度
@@ -345,6 +346,7 @@ class Save:
         保存为pdf。
         :param filename: 文件名。不需要带格式后缀，直接输入文件名即可。
         :param dpi: 显示的dpi，默认600.
+        :param bbox_inches: 修剪实际图形的空白
         :return:
         """
         plt.savefig(pdf_base_dir + filename + '.pdf', dpi=dpi, bbox_inches='tight')  # 保存为pdf文件
