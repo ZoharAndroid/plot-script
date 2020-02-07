@@ -38,6 +38,10 @@ for i in np.arange(len(xtick_label) * 3, len(xtick_label) * 4, 1):
     meam = np.mean(data.loc[i, 2:].tolist())
     dxr.append(meam)
 
+art=art[1:]
+sail=sail[1:]
+poptrie=poptrie[1:]
+dxr=dxr[1:]
 y_max = max(art + sail + poptrie + dxr)
 
 Plot.create_figure((2.5, 2.))
@@ -50,7 +54,8 @@ Plot.plot_xlable('locality', font_size=13)
 Plot.plot_ylabel('speed(MLPS)', font_size=13)
 Plot.plot_ylim(0, y_max * 5 / 4)
 Plot.plot_setYticksLabel(12)
-Plot.plot_xticks(np.arange(0, 10, 3), ['1', '8', '64', '512'], font_size=12)
+ticks=['2','','8','','','64','','','512']
+Plot.plot_xticks(np.arange(0, len(art), 1), ticks, font_size=12)
 Plot.plot_grid()
 Plot.plot_legend([line1, line2, line3, line4], ['Art', 'Sail', 'Poptrie', 'DxR'], ncol=2, bbox_to_anchor=(0.38, 1.08),
                  loc='upper center', columnspacing=0.5,

@@ -17,24 +17,24 @@ platform = sys.argv[2]  # 平台类型
 data = Utils.read_csv_row(csv_filename)
 
 # 从读取的csv文件中分别获取不同类别的数据
-art = data.loc[0, 2:].tolist()
-sail = data.loc[1, 2:].tolist()
-poptrie = data.loc[2, 2:].tolist()
-dxr = data.loc[3, 2:].tolist()
+art = data.loc[0, 2:].tolist()[1:]
+sail = data.loc[1, 2:].tolist()[1:]
+poptrie = data.loc[2, 2:].tolist()[1:]
+dxr = data.loc[3, 2:].tolist()[1:]
 
 y_max = max(art + sail + poptrie + dxr)
-
 Plot.create_figure((2.5, 2.))
 Plot.plot_setting(111)
-line1, = Plot.plot(np.arange(0, len(art), 1), art, color=Color.red_color[0])
-line2, = Plot.plot(np.arange(0, len(sail), 1), sail, linestyle='--', color=Color.dark_color[0])
-line3, = Plot.plot(np.arange(0, len(poptrie), 1), poptrie, color=Color.green_color[0], marker='x', markersize=6)
-line4, = Plot.plot(np.arange(0, len(dxr), 1), dxr, color=Color.color[0], marker='o', markersize=6)
+ticks=['2','','8','','','64','','','512']
+line1, = Plot.plot(np.arange(0, len(art), 1), art, label=ticks, color=Color.red_color[0])
+line2, = Plot.plot(np.arange(0, len(sail), 1), sail,label=ticks, linestyle='--', color=Color.dark_color[0])
+line3, = Plot.plot(np.arange(0, len(poptrie), 1), poptrie, label=ticks,color=Color.green_color[0], marker='x', markersize=6)
+line4, = Plot.plot(np.arange(0, len(dxr), 1), dxr,label=ticks, color=Color.color[0], marker='o', markersize=6)
 Plot.plot_xlable('locality', font_size=13)
 Plot.plot_ylabel('speed(MLPS)', font_size=13)
 Plot.plot_ylim(0, y_max * 5 / 4)
 Plot.plot_setYticksLabel(12)
-Plot.plot_xticks(np.arange(0, 10, 3), ['1', '8', '64', '512'], font_size=12)
+Plot.plot_xticks(np.arange(0, len(art), 1), ticks, font_size=12)
 Plot.plot_grid()
 Plot.plot_legend([line1, line2, line3, line4], ['Art', 'Sail', 'Poptrie', 'DxR'], ncol=2, bbox_to_anchor=(0.38, 1.08),
                  loc='upper center', columnspacing=0.5,
