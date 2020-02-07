@@ -29,7 +29,7 @@ temp = v4_art + v4_sail + v4_poptrie + v4_dxr
 y_max = max(temp)
 
 
-def plotv4(art, sail, poptrie, dxr, xlabel, ylabel, pdfname):
+def plotv4(art, sail, poptrie, dxr, ylabel, pdfname):
     Plot.create_figure((12, 2.))
     Plot.plot_setting(111)
     bar_width = 0.3
@@ -58,8 +58,8 @@ def plotv4(art, sail, poptrie, dxr, xlabel, ylabel, pdfname):
         x_ticks.append(i + 3 / 2 * (bar_width + bar_gap))
     Plot.plot_xticks(x_ticks, xtick_label, font_size=12, rotation=20)
     Plot.plot_setYticksLabel(fontsize=13)
-    Plot.plot_xlable(xlabel, font_size=13)
-    Plot.plot_ylabel(ylabel, font_size=13)
+    # Plot.plot_xlable(xlabel, font_size=13)
+    Plot.plot_ylabel(ylabel, font_size=14)
     Plot.plot_ylim(0, y_max * 6 / 5)
     Plot.plot_grid()
 
@@ -70,4 +70,4 @@ def plotv4(art, sail, poptrie, dxr, xlabel, ylabel, pdfname):
 
 
 if __name__ == '__main__':
-    plotv4(v4_art, v4_sail, v4_poptrie, v4_dxr, 'FIB', 'v4 lookup MLPS', "exp1-v4" + "-" + platform)
+    plotv4(v4_art, v4_sail, v4_poptrie, v4_dxr, 'MLPS', "exp1-v4" + "-" + platform)

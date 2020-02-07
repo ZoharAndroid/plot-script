@@ -62,8 +62,8 @@ for i in np.arange(0, len((xtick_label) * 2), 2):
     x_ticks.append(i +  (bar_width + bar_gap))
 Plot.plot_xticks(x_ticks, xtick_label, font_size=12, rotation=10)
 Plot.plot_setYticksLabel(fontsize=13)
-Plot.plot_xlable('FIB', font_size=13)
-Plot.plot_ylabel('v6 lookup MLPS', font_size=13)
+# Plot.plot_xlable('FIB', font_size=13)
+Plot.plot_ylabel('MLPS', font_size=14)
 Plot.plot_ylim(0, y_max * 6 / 5)
 Plot.plot_grid()
 
