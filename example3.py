@@ -3,12 +3,10 @@
 # @Author: zzh
 # @Date: 2020/1/8 0:08
 
-import matplotlib.pyplot as plt
-from utils import Utils
-import matplotlib
+from exp.tools.utils import Utils
 import numpy as np
-from plot import Plot
-from plot import Save
+from exp.tools.plot import Plot
+from exp.tools.plot import Save
 
 # 这是一个叠加的组装图例子
 

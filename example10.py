@@ -3,7 +3,7 @@
 # @Author: zzh
 # @Date: 2020/1/12 11:21
 
-from plot import *
+from exp.tools.plot import *
 import numpy as np
 
 

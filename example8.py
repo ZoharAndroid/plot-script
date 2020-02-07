@@ -2,10 +2,10 @@
 # -*- coding: utf-8 -*-
 # @Author: zzh
 # @Date: 2020/1/9 20:33
-from plot import Plot
-from plot import Color
-from plot import Save
-from utils import Utils
+from exp.tools.plot import Plot
+from exp.tools.plot import Color
+from exp.tools.plot import Save
+from exp.tools.utils import Utils
 
 data = Utils.read_csv('example8.csv', only_data=True)
 max_min_data = Utils.read_csv('example8-2.csv', only_data=True)

@@ -3,11 +3,10 @@
 # @Author: zzh
 # @Date: 2020/1/9 19:46
 
-from plot import Plot
-from plot import Save
-from font import Font
-from plot import Color
-from utils import Utils
+from exp.tools.plot import Plot
+from exp.tools.plot import Save
+from exp.tools.plot import Color
+from exp.tools.utils import Utils
 import numpy as np
 
 header, data = Utils.read_csv('example7.csv')

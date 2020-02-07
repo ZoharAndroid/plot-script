@@ -3,12 +3,10 @@
 # @Author: zzh
 # @Date: 2020/1/8 11:33
 
-import matplotlib.pyplot as plt
-from utils import Utils
+from exp.tools.utils import Utils
 import numpy as np
-import matplotlib
-from plot import Save
-from plot import Plot
+from exp.tools.plot import Save
+from exp.tools.plot import Plot
 
 # 这是一个并行的柱形图例子
 # 读取的文件为：cache-1-0.csv

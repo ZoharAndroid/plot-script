@@ -3,12 +3,10 @@
 # @Author: zzh
 # @Date: 2020/1/8 12:43
 
-import matplotlib.pyplot as plt
 import numpy as np
-from utils import Utils
-import matplotlib
-from plot import Plot
-from plot import Save
+from exp.tools.utils import Utils
+from exp.tools.plot import Plot
+from exp.tools.plot import Save
 
 # 这是一幅包含了3个箱型图的绘图例子
 # 读取的文件是：llc_25_box.csv llc_50_box.csv llc_75_box.csv

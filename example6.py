@@ -3,12 +3,10 @@
 # @Author: zzh
 # @Date: 2020/1/8 15:16
 
-import matplotlib.pyplot as plt
-import numpy as np
-from utils import Utils
-from plot import Plot
-from plot import Save
-from plot import Color
+from exp.tools.utils import Utils
+from exp.tools.plot import Plot
+from exp.tools.plot import Save
+from exp.tools.plot import Color
 
 # 这是一个多个柱子并行的柱状图
 

@@ -3,7 +3,7 @@
 # @Author: zzh
 # @Date: 2020/1/10 12:05
 
-from plot import *
+from exp.tools.plot import *
 import numpy as np
 
 # 生成数据集

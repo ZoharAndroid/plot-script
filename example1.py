@@ -2,9 +2,9 @@
 # -*- coding: utf-8 -*-
 # @Author: zzh
 # @Date: 2020/1/7 12:21
-from utils import Utils
-from plot import Plot
-from plot import Save
+from exp.tools.utils import Utils
+from exp.tools.plot import Plot
+from exp.tools.plot import Save
 import numpy as np
 
 # 这是一个折线图

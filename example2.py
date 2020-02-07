@@ -3,10 +3,10 @@
 # @Author: zzh
 # @Date: 2020/1/7 19:29
 
-from utils import Utils
+from exp.tools.utils import Utils
 import numpy as np
-from plot import Plot
-from plot import Save
+from exp.tools.plot import Plot
+from exp.tools.plot import Save
 
 # 这是一个箱型图例子
 name = ['art', 'sail', 'poptrie']
