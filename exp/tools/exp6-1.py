@@ -39,10 +39,10 @@ for i in np.arange(0, data.shape[0], 1):
 
 y_max = max(art_data + sail_data + poptrie_data)
 
-Plot.create_figure((12, 2.))
+Plot.create_figure((11, 1.9))
 Plot.plot_setting(111)
 bar_width = 0.3
-bar_gap = 0.09
+bar_gap = 0.1
 
 x_ticks = np.arange(0, len(art_data) * 2, 2)
 bar1 = Plot.plot_bar(x_ticks, art_data, bar_width=bar_width, color=Color.dark_color[3])
@@ -59,7 +59,7 @@ bar3 = Plot.plot_bar(x_ticks, poptrie_data, bar_width=bar_width, color=Color.dar
 
 x_ticks = []
 for i in np.arange(0, len((xtick_label) * 2), 2):
-    x_ticks.append(i + 3 / 2 * (bar_width + bar_gap))
+    x_ticks.append(i +  (bar_width + bar_gap))
 Plot.plot_xticks(x_ticks, xtick_label, font_size=12, rotation=10)
 Plot.plot_setYticksLabel(fontsize=13)
 Plot.plot_xlable('FIB', font_size=13)
@@ -68,6 +68,6 @@ Plot.plot_ylim(0, y_max * 6 / 5)
 Plot.plot_grid()
 
 Plot.plot_legend([bar1, bar2, bar3], ['Art', 'Sail', 'Poptrie'], ncol=3, bbox_to_anchor=(0.5, 1.07),
-                 loc='upper center', columnspacing=0.8, font_size=13)
+                 loc='upper center', columnspacing=1, font_size=13)
 
 Save.save_to_pdf('exp6-1' + '-' + platform)
