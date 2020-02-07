@@ -22,14 +22,17 @@ poptrie_data = []
 xtick_label = []
 for i in np.arange(0, data.shape[0], 1):
     if data.loc[i, 0] == 'art':
+        if data.loc[i, 1] == 'rrc02' or data.loc[i, 1] == 'rrc06':
+            continue
         art_data.append(data.loc[i, 2])
     elif data.loc[i, 0] == 'sail':
-        if data.loc[i,1] == 'rrc06':
-            art_data.append(0)
+        if data.loc[i, 1] == 'rrc02' or data.loc[i, 1] == 'rrc06':
+            continue
         sail_data.append(data.loc[i, 2])
     elif data.loc[i, 0] == 'poptrie':
+        if data.loc[i, 1] == 'rrc02' or data.loc[i, 1] == 'rrc06':
+            continue
         poptrie_data.append(data.loc[i, 2])
-
 
     if data.loc[i, 1] not in xtick_label:
         xtick_label.append(data.loc[i, 1])
@@ -57,14 +60,14 @@ bar3 = Plot.plot_bar(x_ticks, poptrie_data, bar_width=bar_width, color=Color.dar
 x_ticks = []
 for i in np.arange(0, len((xtick_label) * 2), 2):
     x_ticks.append(i + 3 / 2 * (bar_width + bar_gap))
-Plot.plot_xticks(x_ticks, xtick_label, font_size=12,rotation=10)
+Plot.plot_xticks(x_ticks, xtick_label, font_size=12, rotation=10)
 Plot.plot_setYticksLabel(fontsize=13)
 Plot.plot_xlable('FIB', font_size=13)
-Plot.plot_ylabel('ylabel', font_size=12)
-Plot.plot_ylim(0, y_max * 6/5)
+Plot.plot_ylabel('v6 lookup MLPS', font_size=13)
+Plot.plot_ylim(0, y_max * 6 / 5)
 Plot.plot_grid()
 
 Plot.plot_legend([bar1, bar2, bar3], ['Art', 'Sail', 'Poptrie'], ncol=3, bbox_to_anchor=(0.5, 1.07),
                  loc='upper center', columnspacing=0.8, font_size=13)
 
-Save.save_to_pdf('exp6-1'+'-'+platform)
+Save.save_to_pdf('exp6-1' + '-' + platform)
