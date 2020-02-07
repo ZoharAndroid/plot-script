@@ -40,7 +40,7 @@ Plot.plot_ylim(0, y_max*6/5)
 # Plot.plot_yticks(np.arange(10, 45, 10))
 Plot.plot_grid()
 Plot.plot_setYticksLabel(15)
-Plot.plot_ylabel('Time(us)', font_size=16)
+Plot.plot_ylabel('update overhead('+r'$\mu$s)', font_size=16)
 Plot.plot_legend([bar1, bar2, bar3, bar4], ['Art', 'Sail', 'Poptrie', 'DxR'], loc='upper right',
                  bbox_to_anchor=(1.05, 1.05), ncol=1, font_size=13,
                  labelspacing=0.1)
