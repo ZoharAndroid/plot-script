@@ -29,16 +29,16 @@ dxr_data = dxr[0:use_num]
 
 y_max = max(art_data + sail_data + poptrie_data + dxr_data)
 
-Plot.create_figure((3, 2.))
+Plot.create_figure((3.2, 2.))
 Plot.plot_setting(111)
-line1, = Plot.plot(np.arange(1, use_num + 1, 1), art_data, color=Color.red_color[0])
+line1, = Plot.plot(np.arange(1, use_num + 1, 1), art_data, color=Color.dark_color[0])
 line2, = Plot.plot(np.arange(1, use_num + 1, 1), sail_data, linestyle='--', color=Color.dark_color[0])
-line3, = Plot.plot(np.arange(1, use_num + 1, 1), poptrie_data, color=Color.green_color[0], marker='x', markersize=4,
-                   linewidth=1.9)
-line4, = Plot.plot(np.arange(1, use_num + 1, 1), dxr_data, color=Color.color[0], marker='o', markersize=3,
+line3, = Plot.plot(np.arange(1, use_num + 1, 1), poptrie_data, color=Color.dark_color[0], markersize=4,linestyle=":",
+                   linewidth=2)
+line4, = Plot.plot(np.arange(1, use_num + 1, 1), dxr_data, color=Color.dark_color[0], marker='o', markersize=3,
                    linewidth=1.9)
 Plot.plot_xlable('core(#)', font_size=20)
-Plot.plot_ylabel('speed(Mpps)', font_size=20)
+Plot.plot_ylabel('speed(MLPS)', font_size=20)
 # tick_gap = 1
 # if use_num <= 10:
 #     tick_gap = int(use_num/5)
@@ -49,9 +49,9 @@ Plot.plot_ylabel('speed(Mpps)', font_size=20)
 Plot.plot_xticks(np.arange(1, use_num + int(use_num/5), int(use_num/5)))
 Plot.plot_ylim(0, y_max * 6 / 5)
 # Plot.plot_yticks(np.arange(200, 1000, 200))
-Plot.plot_setYticksLabel(16)
+Plot.plot_setYticksLabel(14)
 Plot.plot_grid()
-Plot.plot_legend([line1, line2, line3, line4], ['Art', 'Sail', 'Poptrie', 'DxR'], ncol=2, bbox_to_anchor=(-.06, 1.10),
+Plot.plot_legend([line1, line2, line3, line4], ['Art', 'Sail', 'Poptrie', 'DxR'], ncol=2, bbox_to_anchor=(-.05, 1.10),
                  loc='upper left',
-                 font_size=15, labelspacing=0.2)
+                 font_size=15, labelspacing=0.2,columnspacing=0.3)
 Save.save_to_pdf('exp4-1' + '-' + platform)

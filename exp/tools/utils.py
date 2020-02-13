@@ -64,3 +64,41 @@ class Utils:
             absolute_add = data_base_dir + filename
         data_frame = pd.read_csv(absolute_add, header=None, index_col=False)
         return data_frame
+
+    @staticmethod
+    def v4_rrcs_data():
+        v4_rrcs_label = []
+        v4_rrcs = []
+        data = Utils.read_csv('exp/csv/rrcs.csv', without_header=True)
+        count = 0
+        for i in data[1]:
+            count = count + 1
+            if count % 2 != 0:
+                v4_rrcs.append(i)
+
+        count = 0
+        for i in data[0]:
+            count = count + 1
+            if count % 2 != 0:
+                v4_rrcs_label.append(i)
+
+        return v4_rrcs,v4_rrcs_label
+
+    @staticmethod
+    def v6_rrcs_data():
+        v6_rrcs_label = []
+        v6_rrcs = []
+        data = Utils.read_csv('exp/csv/rrcs.csv', without_header=True)
+        count = 0
+        for i in data[1]:
+            count = count + 1
+            if count % 2 != 0:
+                v6_rrcs.append(i)
+
+        count = 0
+        for i in data[0]:
+            count = count + 1
+            if count % 2 != 0:
+                v6_rrcs_label.append(i)
+
+        return v6_rrcs, v6_rrcs_label

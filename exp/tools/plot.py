@@ -318,7 +318,7 @@ class Plot:
         """
         for rect in rects:
             height = rect.get_height()
-            annotate = Plot.ax.annotate(str(height), xy=((rect.get_x() + rect.get_width() / 2), height),
+            annotate = Plot.ax.annotate(str(int(height)), xy=((rect.get_x() + rect.get_width() / 2), height),
                                         ha='center', va='bottom')
             annotate.set_fontsize(font_size)
             annotate.set_fontfamily('Times New Roman')
