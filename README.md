@@ -31,43 +31,43 @@
 
 ## 3.1. example1
 
-![](example/example-picture/example1.png)
+![](./result/example-picture/example1.png)
 
 ## 3.2. example2
 
-![](./example/example-picture/example2.png)
+![](./result/example-picture/example2.png)
 
 ## 3.3. example3
 
-![](./example/example-picture/example3.png)
+![](./result/example-picture/example3.png)
 
 ## 3.4. example4
 
-![](./example/example-picture/example4.png)
+![](./result/example-picture/example4.png)
 
 ## 3.5. example5
 
-![](./example/example-picture/example5.png)
+![](./result/example-picture/example5.png)
 
 ## 3.6. example6
 
-![](./example/example-picture/example6.png)
+![](./result/example-picture/example6.png)
 
 ## 3.7. example7
 
-![](./example/example-picture/example7.png)
+![](./result/example-picture/example7.png)
 
 ## 3.8. example8
 
-![](./example/example-picture/example8.png)
+![](./result/example-picture/example8.png)
 
 ## 3.9. example9
 
-![](./example/example-picture/example9.png)
+![](./result/example-picture/example9.png)
 
 ## 3.10. example10
 
-![](./example/example-picture/example10.png)
+![](./result/example-picture/example10.png)
 
 **后序继续完善plot库和添加更多的绘图样式例子。**
 
